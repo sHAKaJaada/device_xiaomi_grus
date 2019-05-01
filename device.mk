@@ -7,7 +7,7 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
 # Get non-open-source specific aspects
-$(call inherit-product-if-exists, vendor/xiaomi/dipper/dipper-vendor.mk)
+#$(call inherit-product-if-exists, vendor/xiaomi/sirius/sirius-vendor.mk)
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2248
@@ -25,8 +25,8 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
-# Inherit from sdm845-common
-$(call inherit-product, device/xiaomi/sdm845-common/sdm845.mk)
+# Inherit from sdm710-common
+$(call inherit-product, device/xiaomi/sdm710-common/sdm710.mk)
 
 # Device fstab
 PRODUCT_PACKAGES += \
@@ -52,7 +52,7 @@ PRODUCT_COPY_FILES += \
 
 # LiveDisplay
 PRODUCT_PACKAGES += \
-    lineage.livedisplay@2.0-service.xiaomi_sdm845
+    lineage.livedisplay@2.0-service.xiaomi_sdm710
 
 # NFC
 PRODUCT_PACKAGES += \
