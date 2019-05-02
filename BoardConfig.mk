@@ -17,7 +17,7 @@ TARGET_FACE_UNLOCK_CAMERA_ID := 5
 
 # Kernel
 TARGET_KERNEL_CONFIG := sirius_user_defconfig
-
+#TARGET_PREBUILT_KERNEL:= device/xiaomi/sirius/zImage
 # HIDL
 DEVICE_FRAMEWORK_MANIFEST_FILE += $(DEVICE_PATH)/framework_manifest.xml
 

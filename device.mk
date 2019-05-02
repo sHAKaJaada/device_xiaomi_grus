@@ -71,3 +71,7 @@ PRODUCT_COPY_FILES += \
 # PocketMode
 PRODUCT_PACKAGES += \
     XiaomiPocketMode
+
+# Device init scripts
+PRODUCT_PACKAGES += \
+    libspl 
